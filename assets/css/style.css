@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+nav {
+    transition: 0.5s;
+}
+nav.sticky {
+    background-color: #fff;
+}
+nav.sticky .nav-link {
+    color: #ffc107;
+}
+section.landing-page {
+    background-image: url('../img/mie\ ayam-2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}   
+section.landing-page .tagline {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+}
+
+@media (max-width:576px) {
+    section.landing-page {
+        background-image: url('../img/mie\ ayam-2.jpg');
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        height: 100vh;
+    }   
+    section.landing-page .tagline {
+        font-size: 2.5em;
+    }
+}
+
+section#produk {
+    width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+    margin: auto;
+}
+
+section#produk .card {
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+
+section#produk .card:hover {
+    box-shadow: 2px 2px 10px rgb(231, 231, 231);
+}
+
+section#produk .card img {
+    transition: 0.5s;
+}
+
+section#produk .card:hover img {
+    transform: scale(1.15);
+}
+
+section#testimoni {
+    width: 100%;
+}
+
+section#testimoni .carousel-inner img {
+    height: 65vh;
+    object-fit: contain;
+}
+
+section#testimoni .carousel-inner .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 576px) {
+    section#testimoni .carousel-inner img {
+        height: 65vh;
+        object-fit: cover;
+    }
+
+    section#testimoni .carousel-inner .carousel-content {
+        position: inherit;
+        margin: 10px 0px;
+        text-align: center;
+    }
+}
+
+section#kontak {
+    background: linear-gradient(to left, #fff, transparent), url('../img/mie\ ayam-3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+footer img.logo-wa {
+    transition: 0.3s;
+}
+
+footer img.logo-wa:hover {
+    transform: scale(1.1);
+}
+
+footer .item-message {
+    display: block;
+    scale: 1;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+footer .item-message.hidden {
+    scale: 0;
+    opacity: 0;
+    /* display: none; */
+}
